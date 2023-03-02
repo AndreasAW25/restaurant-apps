@@ -1,0 +1,104 @@
+@media screen and (min-width: 500px) {
+    .hero {
+        background: url('./images/hero-medium.jpg');
+    }
+    .menu-mobile {
+        display: none;
+    }
+    .nav-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .hero {
+        background: url('./images/hero-small.jpg');
+    }
+    .nav {
+        display: none;
+    }
+    .nav-mobile {
+        z-index: 10;
+        width: 100%;
+        position: absolute;
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
+        transition: transform 0.3s ease;
+        display: none;
+    }
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        display: block;
+    }
+    .nav-items-mobile {
+        display: list-item;
+        width: 100%;
+        text-align: left;
+        background-color: #FBC252;
+    }
+    .nav-items-mobile a:hover,
+    .nav-items-mobile a:focus {
+        background-color: #FFB100;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .item-menu {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .list-item-content {
+        padding: 16px 32px 32px 32px;
+    }
+    .list-item-desc {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+    .list-detail-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+    .kategori-menu-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .hero {
+        background: url('./images/hero-large.jpg');
+    }
+    .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .list-detail-item {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-column-gap: 20px;
+    }
+    .kategori-menu-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+    }
+}

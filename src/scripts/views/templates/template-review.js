@@ -2,7 +2,7 @@ const createListReview = (details) => `
 <div tabindex="0" id="list-review" class="list-detail-item-content-title">Review</div>
 ${details.customerReviews.map((review) => `
 <div class="list-review">
-    <img src="./images/user.png" alt="review-img" class="lazyload review-img" />
+    <img src="./images/user.png" alt="review-img" class="review-img" />
 
     <div class="list-detail-review">
         <div tabindex="0" class="review-nama">${review.name} <span class="review-tanggal">- ${review.date}</span></div>

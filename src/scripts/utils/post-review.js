@@ -15,7 +15,7 @@ const PostReview = (url, name, review) => {
   const newReview = `
     ","
     <div class="list-review">
-        <img class="lazyload" data-src="./images/user.png" alt="review-img" class="review-img" />
+        <img src="./images/user.png" alt="review-img" class="review-img" />
 
         <div class="list-detail-review">
             <div class="review-nama">${name} <span class="review-tanggal">- ${date}</span></div>
